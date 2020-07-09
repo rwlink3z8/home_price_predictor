@@ -8,7 +8,7 @@ The first image below is the dashboard for the webapp, the user enters the squar
 
 ![webapp ui](https://github.com/rwlink3z8/home_price_predictor/blob/master/img/webapp.png)
 
-**Process**
+
 
 This is very interesting to me because I am currently funding a flip in my home town. This is the before and the after picture of the house:
 
@@ -18,7 +18,7 @@ This is very interesting to me because I am currently funding a flip in my home 
 **After**
 ![houseafter](https://github.com/rwlink3z8/home_price_predictor/blob/master/img/house_after.jpg)
 
-
+**Process**
 
 I obtained the mls sites from my real estate agent, scraped the mls sites with beautiful soup and dumped the data into a pandas dataframe. I wanted to keep the model simple and practical so we could get baseline estimates, so from the mls site I extracted square footage, lot size in acres, number of bedrooms, number of bathrooms, and year built. I also pulled town from the data and dummizied that variable. 
 
