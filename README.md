@@ -29,7 +29,7 @@ This is the before and the after picture of the house:
 **Before**
 ![housebefore](https://github.com/rwlink3z8/home_price_predictor/blob/master/img/housebefore.jpeg)
 
-**In progress - still my favorite picture **
+**After**
 ![houseafter](https://github.com/rwlink3z8/home_price_predictor/blob/master/img/house_after.jpg)
 
 ## Data Collection and Cleaning
