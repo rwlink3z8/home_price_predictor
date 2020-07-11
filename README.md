@@ -32,7 +32,7 @@ This is the before and the after picture of the house:
 **In progress - still my favorite picture **
 ![houseafter](https://github.com/rwlink3z8/home_price_predictor/blob/master/img/house_after.jpg)
 
-**Data Collection and Cleaning**
+## Data Collection and Cleaning
 
 I obtained the mls sites from my real estate agent, scraped the mls sites with beautiful soup and dumped the data into a pandas dataframe. I wanted to keep the model simple and practical so we could get baseline estimates, so from the mls site I extracted square footage, lot size in acres, number of bedrooms, number of bathrooms, and year built. I also pulled town from the data and dummizied that variable. 
 
@@ -40,7 +40,7 @@ I obtained the mls sites from my real estate agent, scraped the mls sites with b
 
 This is the clean up and feature engineering file for the mls data.
 
-**Modeling and predicting home prices**
+## Modeling and predicting home prices
 
 For modeling I used the log of the sale price as the target because the dataset was skewed, applying the log transform resulted in a normal distribution of the sale price. All of the variables showed good linear relationships with sale price, it is for that reason I decided on a linear regression, two of the strongest were square footage and year built, which are plotted against sale price for the model and the actual data in the testing set. the rmse of the testing set for the log of the sale price 0.22 and the model does a good job as a mean regressor. I plan to update it once a month with new home sales from my real estate agent. After testing it on the test set, I further tested on a small set active listings in the area that were very similar but had slight difference, for example, same features, only differing on lot size, or year built, etc, as a sanity check to make sure the models predictions made sense. 
 
@@ -53,7 +53,7 @@ the get_price_prediction function in the `ccmohp_eda.ipynb` tests the model with
 The only thing not shared on this repo is the webscraper because I do not know if I had permission to scrape that or not and I plan on continuing this work with my real estate agent. 
 
 
-**Deployment**
+## Deployment
 
 I pickled the model and sent the columns to a json file, from there these files are opened in `util.py` and the price prediction function is slightly modified to take a python list instead of a numpy array.
 
@@ -63,6 +63,6 @@ I pickled the model and sent the columns to a json file, from there these files 
 
 The web app is now live hosted by AWS
 
-**Future Work**
+## Future Work
 
 My plan is to update the model once a month with new sales from my real estate agent, at that point I will also with greater certainty if it is okay to share the webscraper. Future work will take into account school districts, which are not necessarily the same as town. Other features to consider in the future are walkout basements, as those are important selling points to homes in my area, you can see from the picture, the garage goes into the walkout basement which also has full size storm windows on two sides of the structure. I would also like to add features such as paved driveway, cup-de-sac, etc to better fine tune later models. 
