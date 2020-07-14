@@ -65,4 +65,8 @@ The web app is now live hosted by AWS
 
 ## Future Work
 
-My plan is to update the model once a month with new sales from my real estate agent, at that point I will also with greater certainty if it is okay to share the webscraper. Future work will take into account school districts, which are not necessarily the same as town. Other features to consider in the future are walkout basements, as those are important selling points to homes in my area, you can see from the picture, the garage goes into the walkout basement which also has full size storm windows on two sides of the structure. I would also like to add features such as paved driveway, cup-de-sac, etc to better fine tune later models. 
+My plan is to update the model once a month with new sales from my real estate agent, at that point I will also with greater certainty if it is okay to share the webscraper. Future work will take into account school districts, which are not necessarily the same as town. Other features to consider in the future are walkout basements, as those are important selling points to homes in my area, you can see from the picture, the garage goes into the walkout basement which also has full size storm windows on two sides of the structure. I would also like to add features such as paved driveway, cul-de-sac, pool, detached shop, etc to fine tune later models. 
+
+MLS listing information was obtained from my real estate agent but it could easily be obtained by scraping other popular real estate websites.
+
+
