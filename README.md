@@ -69,4 +69,6 @@ My plan is to update the model once a month with new sales from my real estate a
 
 MLS listing information was obtained from my real estate agent but it could easily be obtained by scraping other popular real estate websites.
 
+the flask app here still shows the development server, updating that to waitress to run on a production server
+
 
