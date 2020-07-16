@@ -125,7 +125,7 @@ every path/to/file incorrect
 
 all the code leads back
 
-to the code i know
+to the loops i know
 
 that will run so slow....
 
