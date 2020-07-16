@@ -100,6 +100,70 @@ And what about scorrreees
 
 Scorrreeees
 
-Just made up math
+Just made up math.
+
+
+or maybe this other one i hacked together?
+
+I've been staring at the monitor
+
+long as a nueron can remember
+
+no matter how hard i type
+
+all the strings I write.....
+
+i wish i could be the perfect coder
+
+i come back to the monitor....
+
+every loop i write 
+
+all the code I hack
+
+every path/to/file incorrect
+
+all the code leads back
+
+to the code i know
+
+that will run so slow....
+
+
+that has to be all of the hacky disney and musical rip offs right?
+
+well...
+
+do you wanna build a model?
+
+come on lets go and code!
+
+i never write while loops anymore 
+
+my models are so poor 
+
+it's like I found a minima!
+
+do you wanna build a model?
+
+a machine learning model?
+
+I think some cross val is overdue 
+
+i've started talking to the function callssss!
+
+it gets a little lonely
+
+all these empty cells 
+
+just watching the epochs tick by
+
+data are you in there?
+
+people are asking what you mean (shoulder shrug emoji, bewildered i dunno emoji)
+
+people say code harder and I'm trying skew, just set up git pull
+
+we only have two branches....just me and you... what are we going to code?
 
 
