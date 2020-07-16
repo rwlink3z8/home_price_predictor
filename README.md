@@ -103,7 +103,7 @@ Scorrreeees
 Just made up math.
 
 
-...............or maybe this other one i hacked together?
+................................................or maybe this other one i hacked together?
 
 I've been staring at the monitor
 
@@ -130,7 +130,7 @@ to the code i know
 that will run so slow....
 
 
-........that has to be all of the hacky disney and musical rip offs right?
+.........................that has to be all of the hacky disney and musical rip offs right?
 
 well...
 
