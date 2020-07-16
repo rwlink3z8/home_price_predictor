@@ -67,8 +67,26 @@ The web app is now live hosted by AWS
 
 My plan is to update the model once a month with new sales from my real estate agent, at that point I will also with greater certainty if it is okay to share the webscraper. Future work will take into account school districts, which are not necessarily the same as town. Other features to consider in the future are walkout basements, as those are important selling points to homes in my area, you can see from the picture, the garage goes into the walkout basement which also has full size storm windows on two sides of the structure. I would also like to add features such as paved driveway, cul-de-sac, pool, detached shop, etc to fine tune later models. 
 
-MLS listing information was obtained from my real estate agent but it could easily be obtained by scraping other popular real estate websites.
+MLS listing information was obtained from my real estate agent but it could easily be obtained by scraping other popular real estate websites. The flask app here still shows the development server, updating that to waitress to run on a production server
 
-the flask app here still shows the development server, updating that to waitress to run on a production server
+
+if you're still reading this far maybe you'd enjoy a song lyric that's not at all a rip off of a rip off ;)
+
+I call it....seasons of code
+
+525,600 features
+525,000 beta coefficients
+525,000 boosting algorithms
+How can I build you 1 decision tree?
+There’s lasso, and gradient, and the worst ever neural network
+There’s Booleans, and bitwise, and eigen vectors
+what are their values?!?!?
+There’s a dude that doesn’t go here 
+doesn’t even know lambda functions
+There’s help if, you ask enough
+But only for KNN
+And what about scorrreees
+Scorrreeees
+Just made up math
 
 
