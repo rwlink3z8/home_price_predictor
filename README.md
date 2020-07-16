@@ -75,18 +75,31 @@ if you're still reading this far maybe you'd enjoy a song lyric that's not at al
 I call it....seasons of code
 
 525,600 features
+
 525,000 beta coefficients
+
 525,000 boosting algorithms
+
 How can I build you 1 decision tree?
+
 There’s lasso, and gradient, and the worst ever neural network
+
 There’s Booleans, and bitwise, and eigen vectors
+
 what are their values?!?!?
+
 There’s a dude that doesn’t go here 
+
 doesn’t even know lambda functions
+
 There’s help if, you ask enough
+
 But only for KNN
+
 And what about scorrreees
+
 Scorrreeees
+
 Just made up math
 
 
