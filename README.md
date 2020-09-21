@@ -68,6 +68,8 @@ The web app is now live hosted by AWS
 
 ## Future Work
 
+The stackoverflow community has been my friend in building the scraper, I started out with simply dumping 11,000 lines of text into a file and cleaning the listing information with regex patterns, from there I was assisted in building a scraper using get and post requests that pulled all the information in correctly from the start. 
+
 Future work will include revamping the webscraper to go into each individual listing and pull all of the additional information, that way I can build a model with more features, from there PCA can be used as I do not want the number of features to get out of control for the sake of the UI. 
 
 MLS listing information was obtained from my real estate agent and then that site was scraped with permission.
