@@ -11,6 +11,15 @@ DisplayNumber:0, TableID:'13', DisplayID:'2523'. Bucket:0, Sent:'S', Show: 1, Ch
 
 Status:'1851'
 
+did not leave a space between ,Info did a regex replace, ,Info with , Info
+
+replaced all commas with nothing to get rid of the commas in sales price
+
+replaced spaces with commas
+
+added back an end of line comma for syntax to get my list of key value pairs
+
+removed the dollar sign from currency, don't think i need this for these purposes
 
 if you're still reading this far maybe you'd enjoy a song lyric that's not at all a rip off of a rip off ;)
 
