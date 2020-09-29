@@ -70,9 +70,9 @@ The web app is now live hosted by AWS
 
 ## Future Work
 
-The stackoverflow community has been my friend in building the scraper, I started out with simply dumping 11,000 lines of text into a file and cleaning the listing information with regex patterns, from there I was assisted in building a scraper using get and post requests that pulled all the information in correctly from the start. 
+The initial scraper obtained the listing headers for each listing with beautifulsoup and requests. Recent srapers have been using selenium and can gather more features on each listing.
 
-Future work will include using either the data obtained from `full_scraper1.py` and building a more complex model, or building a new scraper to obtain more information. As of September, the data includes 2300+ listings over the previous 14 months. It will get to the point where I would also like to look at the data over time and see if any trends emerge there as well.
+Future work will include using either the data obtained from the selenium scraper in the data folder `full_scraper1.py` and building a more complex model, or building a new scraper to obtain more information, either way, I believe an accuracy score in the mid to high 80's can still be obtained with a reasonable number of features and this hypothesis will be tested in the weeks to come. As of September, the data includes 2300+ listings over the previous 14 months. It will get to the point where I would also like to look at the data over time and see if any trends emerge there as well.
 
 MLS listing information was obtained from my real estate agent and then that site was scraped with permission.
 
