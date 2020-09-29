@@ -43,6 +43,8 @@ I wanted to keep the model simple and practical so we could get baseline estimat
 
 This is the clean up and feature engineering file for the mls data.
 
+There is an initial selenium scraper that obtains more information for each additional listing in the data folder `full_scraper1.py` but this data still needs to be cleaned up.
+
 ## Modeling and predicting home prices
 
 For modeling I used the log of the sale price as the target because the dataset was skewed, applying the log transform resulted in a normal distribution of the sale price. All of the variables showed good linear relationships with sale price, it is for that reason I decided on a linear regression, two of the strongest were square footage and year built, which are plotted against sale price for the model and the actual data in the testing set. The accuracy score of the model is 76% and the model does a good job as a mean regressor. I plan to update it once a month with new home sales from my real estate agent. After testing it on the test set, I further tested on a small set active listings in the area that were very similar but had slight difference, for example, same features, only differing on lot size, or year built, etc, as a sanity check to make sure the models predictions made sense. 
@@ -70,7 +72,7 @@ The web app is now live hosted by AWS
 
 The stackoverflow community has been my friend in building the scraper, I started out with simply dumping 11,000 lines of text into a file and cleaning the listing information with regex patterns, from there I was assisted in building a scraper using get and post requests that pulled all the information in correctly from the start. 
 
-Future work will include revamping the webscraper to go into each individual listing and pull all of the additional information, that way I can build a model with more features, from there PCA can be used as I do not want the number of features to get out of control for the sake of the UI. 
+Future work will include using either the data obtained from `full_scraper1.py` and building a more complex model, or building a new scraper to obtain more information. As of September, the data includes 2300+ listings over the previous 14 months. It will get to the point where I would also like to look at the data over time and see if any trends emerge there as well.
 
 MLS listing information was obtained from my real estate agent and then that site was scraped with permission.
 
