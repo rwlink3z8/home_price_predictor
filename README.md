@@ -36,8 +36,10 @@ This is the before and the after picture of the house:
 
 ## Data Collection and Cleaning
 
-I obtained the mls sites from my real estate agent, scraped the mls sites with requests and beautiful soup and loaded the data into a pandas dataframe to perform regression. The webscraper is available in the file called `mls_scraper.py` 
-I wanted to keep the model simple and practical so we could get baseline estimates, so from the mls site I extracted square footage, lot size in acres, number of bedrooms, number of bathrooms, and year built. I also pulled town from the data and dummizied that variable. 
+The next iteration of the webscraper is available in the file `20201002_full_mls_scraper.py` it utilizes selenium to go into each listing and pull all relevant information from the listing and move to the next listing. The initial selenium scraper took over an hour to obtain listing information for 500 listing, drilling down further into selenium, the subsequent scraper took 15 minutes to obtain this information for 500 listings. This data needs cleaned significantly before it can be modeled usefully and that information can be found in the data cleaning folder. I believe this is a good approach for lazy loading websites with hidden elements.
+
+Initially, I obtained the mls sites from my real estate agent, scraped the main site with requests and beautiful soup and loaded the data into a pandas dataframe to perform regression. The webscraper is available in the file called `mls_scraper.py`
+I wanted to keep the model simple and practical so we could get baseline estimates, so from the mls site I extracted square footage, lot size in acres, number of bedrooms, number of bathrooms, and year built. I also pulled town from the data and dummizied that variable.
 
 `data_cleaning.py`
 
