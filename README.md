@@ -74,7 +74,7 @@ The web app is now live hosted by AWS
 
 The initial scraper obtained the listing headers for each listing with beautifulsoup and requests. Recent srapers have been using selenium and can gather more features on each listing.
 
-The original model looked at roughly 1600 listings after cleaning the data, the newest scraper looked at 2035 listings, it uses selenium and can be found in the data folder `full_scraper1.py`. The original model achieved an accuracy score of 75% using 6 features. The newest ridge regression model achieved an accuracy score of 82% with 16 features. As the model now sees 14 months worth of data, I believe it would be worth doing time series analysis on. 
+The original model looked at roughly 1600 listings after cleaning the data, the newest scraper looked at 2035 listings, it uses selenium and can be found in `20201002_full_mls_scraper.py`. The original model achieved an accuracy score of 75% using 6 features. The newest ridge regression model achieved an accuracy score of 82% with 16 features. As the model now sees 14 months worth of data, I believe it would be worth doing time series analysis on. 
 
 MLS listing information was obtained from my real estate agent and then that site was scraped with permission.
 
