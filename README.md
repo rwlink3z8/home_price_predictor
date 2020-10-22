@@ -83,6 +83,8 @@ The initial scraper obtained the listing headers for each listing with beautiful
 
 The original model looked at roughly 1600 listings after cleaning the data, the newest scraper looked at 2035 listings, it uses selenium and can be found in `20201002_full_mls_scraper.py`. The original model achieved an accuracy score of 75% using 6 features. The newest ridge regression model achieved an accuracy score of 82% with 16 features. As the model now sees 14 months worth of data, I believe it would be worth doing time series analysis on. 
 
+Current work is focusing on rebuilding the application in Django and putting the data into at least two different SQL tables, one that would have coordinates with prices, and the other obtained from the selenium scraper. I also plan on using this information to generate a choropleth as I believe it, along with the color map will be useful visualizations.
+
 MLS listing information was obtained from my real estate agent and then that site was scraped with permission.
 
 
