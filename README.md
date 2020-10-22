@@ -36,16 +36,23 @@ This is the before and the after picture of the house:
 
 ## Data Collection and Cleaning
 
-The next iteration of the webscraper is available in the file `20201002_full_mls_scraper.py` it utilizes selenium to go into each listing and pull all relevant information from the listing and move to the next listing. The initial selenium scraper took over an hour to obtain listing information for 500 listing, drilling down further into selenium, the subsequent scraper took 15 minutes to obtain this information for 500 listings. This data needs cleaned significantly before it can be modeled usefully and that information can be found in the data cleaning folder. I believe this is a good approach for lazy loading websites with hidden elements.
+This section is organized by webscrapers in reverse chronilogical order
+
+The latest iteration of the webscraper is available in the file `20201002_full_mls_scraper.py` it utilizes selenium to go into each listing and pull all relevant information from the listing and move to the next listing. The initial selenium scraper took over an hour to obtain listing information for 500 listing, drilling down further into selenium, the subsequent scraper took 15 minutes to obtain this information for 500 listings. This data needs cleaned significantly before it can be modeled usefully and that information can be found in `2020104_data_cleaning.py` file. I believe this is a good approach for lazy loading websites with hidden elements.
+
+Using the second scraper and inspecting the HTML I was able to find that each listing had a latitude and longitude coordinate associated with it as well as price, 95% of the houses fell between $63,000 and $530,000 (2 standard deviations above the mean and 1.25 standard deviations below the mean). Using that information and some slight cleaning with regular expressions I used folium to create the following colormap for the county
+
+**Color Map of home prices**
+![colormap](https://github.com/rwlink3z8/home_price_predictor/blob/master/img/cc_colormap.png)
+
+The second iteration of the scraper used requests and beautifulsoup to pull all of the header information which was directly kept in the HTML of each website
 
 Initially, I obtained the mls sites from my real estate agent, scraped the main site with requests and beautiful soup and loaded the data into a pandas dataframe to perform regression. The webscraper is available in the file called `mls_scraper.py`
 I wanted to keep the model simple and practical so we could get baseline estimates, so from the mls site I extracted square footage, lot size in acres, number of bedrooms, number of bathrooms, and year built. I also pulled town from the data and dummizied that variable.
 
 `data_cleaning.py`
 
-This is the clean up and feature engineering file for the mls data.
-
-There is an initial selenium scraper that obtains more information for each additional listing in the data folder `full_scraper1.py` but this data still needs to be cleaned up.
+This is the clean up and feature engineering file for the first iteration of the beautifulsoup scraper
 
 ## Modeling and predicting home prices
 
