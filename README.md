@@ -5,12 +5,21 @@ Robert Link
 http://cchomepricepredictor.com/
 
 ## Table of Contents
-1. Background
-2. Web App
-3. Data Collection and processing
-4. Modeling
-5. Deployment
-6. Future Work
+1. TODO
+2. Important Notes
+3. Background
+4. Web App
+5. Data Collection and processing
+6. Modeling
+7. Deployment
+8. Future Work
+
+## TODO
+- Clean up the code to run the scraper, the data cleaner, the models out of jupyter making it more modular
+- Include unit tests
+
+## Important Notes
+These scrapers are run with persmission, the links come directly from my real estate agents MLS site and are only good for 60 days, this is relevant to me as I have bought 3 houses in the previous year and it keeps me up to date on my home market
 
 ## Background
 
