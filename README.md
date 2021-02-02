@@ -4,6 +4,9 @@ Robert Link
 
 http://cchomepricepredictor.com/
 
+
+##### Data migration in process, documented in the following repository https://github.com/rwlink3z8/hpp2
+
 ## Table of Contents
 1. TODO
 2. Important Notes
