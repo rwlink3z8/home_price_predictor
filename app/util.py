@@ -7,7 +7,25 @@ __locations = None
 __data_columns = None
 __model = None
 
-def get_estimated_price(sqft, lot_size, bedrooms, bathrooms, yr_built, location):
+
+def get_estimated_price(city, total_sqft, lot_size, bedrooms, bathrooms, yr_built):
+    '''
+    this function takes user inputs and returns a price prediction -- it will soon be deprecated in favor of util1.py
+    Parameters
+    ---------
+    city - city where house is located
+    total_sqft - finished square footage
+    lot_size - lot size is in acres, if in town and unknown assume 0.2
+    bedrooms - number of bedrooms
+    bathrooms - number of bathrooms
+    yr_built - year the house was built, for remodels enter current year
+    
+    Returns
+    --------
+    response - returns a price prediction from the ridge model
+    '''
+    
+    
     try:
         loc_index = __data_columns.index(location)
     except:
