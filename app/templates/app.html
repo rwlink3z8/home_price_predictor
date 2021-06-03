@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>Cass County Mo Home Price Predictor</title>
+        <title>Cass County Home Price Predictor</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="app.css">
+        <script src="{{ url_for('static', filename='js/app.js')}}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" type="text/css">
     </head>
     <body>
         <div id="navbar" class="collapse navbar-collapse">
@@ -15,68 +15,23 @@
     <form class="form">
         <h2>Cass County MO Home Price Predictor</h2>
         <h2>Square Feet</h2>
-    <input class="sqft" type="number" id="uiSqft" class="floatlabel" name="sqft" value="1000">
-        <h2>Bedrooms</h2>
-        <div class="switch-field">
-            <input type="radio" id="radio-1-BR" name="uiBR" value="1"/>
-            <label for="radio-1-BR">1</label>
-            <input type="radio" id="radio-2-BR" name="uiBR" value="2"/>
-            <label for="radio-2-BR">2</label>
-            <input type="radio" id="radio-3-BR" name="uiBR" value="3"/>
-            <label for="radio-3-BR">3</label>
-            <input type="radio" id="radio-4-BR" name="uiBR" value="4"/>
-            <label for="radio-4-BR">4</label>
-            <input type="radio" id="radio-5-BR" name="uiBR" value="5"/>
-            <label for="radio-5-BR">5</label>
-            <input type="radio" id="radio-6-BR" name="uiBR" value="6"/>
-            <label for="radio-6-BR">6</label>
+    <input class="sqft" type="number" id="uiSqft" class="floatlabel" name="sqft" value="1000"></form>
+        <div>
+            <form class="form">
+                {% include 'bedrooms.html' %}
+            </form>
         </div>
-    </form>
     <form class="form">
-        <h2>Bathrooms</h2>
-        <div class="switch-field">
-            <input type="radio" id="radio-1-Ba" name="uiBA" value="1"/>
-            <label for="radio-1-BA">1</label>
-            <input type="radio" id="radio-2-BA" name="uiBA" value="2"/>
-            <label for="radio-2-BA">2</label>
-            <input type="radio" id="radio-3-BA" name="uiBA" value="3"/>
-            <label for="radio-3-BA">3</label>
-            <input type="radio" id="radio-4-BA" name="uiBA" value="4"/>
-            <label for="radio-4-BA">4</label>
-            <input type="radio" id="radio-5-BA" name="uiBA" value="5"/>
-            <label for="radio-5-BA">5</label>
-            <input type="radio" id="radio-6-BA" name="uiBA" value="6"/>
-            <label for="radio-6-BA">6</label>
-        </div>
+                {% include 'bathrooms.html' %}
     </form>
     <form class="form">
             <h2>Lot Size (Acres 43560 sq ft is 1 acre)</h2>
         <input class="lot_size" type="number" id="uiAcres" class="floatlabel" name="acres" value="1">
             <h2>Year built (this year for remodel)</h2>
         <input class="yr_built" type="number" id="uiYR" class="floatlabel" name="yr" value="2020">
-            <h2>Location</h2>
+            <h2>City</h2>
         <div>
-    <select class="location" name="" id="uiLocations">
-        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
-            <option>town_archie</option>
-            <option>town_belton</option>
-            <option>town_cleveland</option>
-            <option>town_creighton</option>
-            <option>town_drexel</option>
-            <option>town_east lynne</option>
-            <option>town_freeman</option>
-            <option>town_garden city</option>
-            <option>town_greenwood</option>
-            <option>town_harrisonville</option>
-            <option>town_kingsville</option>
-            <option>town_lake winnebago</option>
-            <option>town_lees summit</option>
-            <option>town_loch lloyd</option>
-            <option>town_peculiar</option>
-            <option>town_pleasant hill</option>
-            <option>town_raymore</option>
-            <option>town_strasburg</option>
-    </select>
+                {% include 'city.html' %}
     </div>
         <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
         <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
